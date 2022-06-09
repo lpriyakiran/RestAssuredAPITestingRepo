@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-09T16:03:34 CDT" name="Default suite" finished-at="2022-06-09T16:03:56 CDT" duration-ms="21659">
+    <groups>
+    </groups>
+    <test started-at="2022-06-09T16:03:34 CDT" name="Default test" finished-at="2022-06-09T16:03:56 CDT" duration-ms="21659">
+      <class name="com.test.tests.EndToEndTesting">
+        <test-method signature="TC_001_validLogin()[pri:1, instance:com.test.tests.EndToEndTesting@49d904ec]" started-at="2022-06-09T16:03:34 CDT" name="TC_001_validLogin" finished-at="2022-06-09T16:03:39 CDT" duration-ms="5018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_validLogin -->
+        <test-method signature="TC_002_addUserData()[pri:2, instance:com.test.tests.EndToEndTesting@49d904ec]" started-at="2022-06-09T16:03:39 CDT" name="TC_002_addUserData" finished-at="2022-06-09T16:03:41 CDT" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_addUserData -->
+        <test-method signature="TC_003_getUserData()[pri:3, instance:com.test.tests.EndToEndTesting@49d904ec]" started-at="2022-06-09T16:03:41 CDT" name="TC_003_getUserData" finished-at="2022-06-09T16:03:53 CDT" duration-ms="11661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_getUserData -->
+        <test-method signature="TC_004_updateUserData()[pri:4, instance:com.test.tests.EndToEndTesting@49d904ec]" started-at="2022-06-09T16:03:53 CDT" name="TC_004_updateUserData" finished-at="2022-06-09T16:03:56 CDT" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004_updateUserData -->
+        <test-method signature="TC_005_deleteUserData()[pri:5, instance:com.test.tests.EndToEndTesting@49d904ec]" started-at="2022-06-09T16:03:56 CDT" name="TC_005_deleteUserData" finished-at="2022-06-09T16:03:56 CDT" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_deleteUserData -->
+      </class> <!-- com.test.tests.EndToEndTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
