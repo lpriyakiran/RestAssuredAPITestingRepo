@@ -5,7 +5,7 @@
     <classes>
       <class name="com.test.tests.EndToEndTesting">
         <methods>
-          <include name="TC_004_updateUserData"/>
+          <include name="TC_002_addUserData"/>
         </methods>
       </class> <!-- com.test.tests.EndToEndTesting -->
     </classes>

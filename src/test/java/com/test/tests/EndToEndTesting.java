@@ -2,10 +2,12 @@ package com.test.tests;
 
 import org.testng.annotations.Test;
 
+import com.test.constatnts.SourcePath;
 import com.test.helpers.UserServiceMethods;
 import com.test.models.GetUserPOJO;
 
 import io.restassured.response.Response;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;;
 
 public class EndToEndTesting extends UserServiceMethods{
 	
@@ -20,7 +22,9 @@ public class EndToEndTesting extends UserServiceMethods{
 		Response resp = addUserData();
 		resp.then()
 		.log().body()
-		.statusCode(201);	
+		.statusCode(201)
+		.assertThat()
+		.body(matchesJsonSchemaInClasspath(SourcePath.SCHEMA_FILE_PATH));	
 	}
 	
 	@Test(priority = 3, enabled = true)
@@ -34,14 +38,18 @@ public class EndToEndTesting extends UserServiceMethods{
 	public static void TC_004_updateUserData(){
 		Response resp = updateUserData();
 		resp.then().log().body()
-		.statusCode(200);	
+		.statusCode(200)
+		.assertThat()
+		.body(matchesJsonSchemaInClasspath(SourcePath.SCHEMA_FILE_PATH));	
 	}
 	
 	@Test(priority = 5, enabled = true)
 	public static void TC_005_deleteUserData(){
 		Response resp = deleteUserData();
 		resp.then().log().body()
-		.statusCode(200);
+		.statusCode(200)
+		.assertThat()
+		.body(matchesJsonSchemaInClasspath(SourcePath.SCHEMA_FILE_PATH));
 	}
 
 }

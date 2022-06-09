@@ -57,8 +57,8 @@ public class UserServiceMethods {
 				.baseUri(getBaseUri())
 				.when()
 				.get(Endpoints.GET_DATA);
-		ArrayList<GetUserPOJO> userData = resp.jsonPath().get("findAll(a->a.accountno=='TA-3434343')");
-		System.out.println("First record= "+userData.get(0));
+		//ArrayList<GetUserPOJO> userData = resp.jsonPath().get("findAll(a->a.accountno=='TA-3434343')");
+		//System.out.println("First record= "+userData.get(0));
 		
 		GetUserPOJO[] userList = resp.as(GetUserPOJO[].class);
 		//retrieve userid and id for next steps
@@ -69,7 +69,7 @@ public class UserServiceMethods {
 	
 	public static Response addUserData(){
 		AddUserPOJO addUser = new AddUserPOJO();
-		addUser.setAccountno("TA-3434344");
+		addUser.setAccountno("TA-1985198");
 		addUser.setDepartmentno("1");
 		addUser.setSalary("500");
 		addUser.setPincode("222222");
@@ -87,10 +87,10 @@ public class UserServiceMethods {
 	
 	public static Response updateUserData(){
 		UpdateUserPOJO update = new UpdateUserPOJO();
-		update.setAccountno("TA-3434344");
+		update.setAccountno("TA-1985198");
 		update.setDepartmentno(2);
 		update.setSalary(1000);
-		update.setPincode(222222);
+		update.setPincode(222223);
 		update.setUserid(userId);
 		update.setId(id);
 		
